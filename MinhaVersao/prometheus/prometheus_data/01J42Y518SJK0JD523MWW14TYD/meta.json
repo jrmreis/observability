@@ -1,0 +1,17 @@
+{
+	"ulid": "01J42Y518SJK0JD523MWW14TYD",
+	"minTime": 1722366333836,
+	"maxTime": 1722369600000,
+	"stats": {
+		"numSamples": 207538,
+		"numSeries": 927,
+		"numChunks": 1420
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01J42Y518SJK0JD523MWW14TYD"
+		]
+	},
+	"version": 1
+}

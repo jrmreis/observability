@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
+  "alerting": true,
+  "annotations": true,
+  "backend": true,
+  "dependencies": {
+    "grafanaDependency": "\u003e=9.1.0",
+    "plugins": []
+  },
+  "executable": "gpx_github",
+  "generated": {
+    "extensions": []
+  },
+  "id": "grafana-github-datasource",
+  "includes": [
+    {
+      "name": "GitHub (demo)",
+      "path": "dashboards/dashboard.json",
+      "type": "dashboard"
+    }
+  ],
+  "info": {
+    "author": {
+      "name": "Grafana Labs",
+      "url": "https://grafana.com"
+    },
+    "build": {
+      "time": 1721829063848,
+      "repo": "https://github.com/grafana/github-datasource",
+      "branch": "main",
+      "hash": "cded2b9ec440ac2d42a14a7ebc32f319e6651cf5",
+      "build": 591
+    },
+    "description": "Show data about github issues/pull requests",
+    "keywords": [
+      "github",
+      "git",
+      "devops",
+      "developer tools"
+    ],
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/grafana/github-datasource"
+      }
+    ],
+    "logos": {
+      "large": "img/github.svg",
+      "small": "img/github.svg"
+    },
+    "screenshots": [],
+    "updated": "2024-07-24",
+    "version": "1.7.4"
+  },
+  "metrics": true,
+  "name": "GitHub",
+  "type": "datasource"
+}
