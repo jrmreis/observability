@@ -50,7 +50,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "API uptime",
       "fieldConfig": {
@@ -98,7 +98,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "process_uptime_seconds{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\"}",
@@ -113,7 +113,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Usuários logados no último minuto",
       "fieldConfig": {
@@ -162,7 +162,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "increase(auth_user_success_total[1m])",
@@ -177,7 +177,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Pool de conexões JDBC",
       "fieldConfig": {
@@ -229,7 +229,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "hikaricp_connections{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", pool=\"$pool\"}",
@@ -244,7 +244,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Estado das conexões com o database",
       "fieldConfig": {
@@ -320,7 +320,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "hikaricp_connections_active{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", pool=\"$pool\"}",
@@ -331,7 +331,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "hikaricp_connections_idle{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", pool=\"$pool\"}",
@@ -343,7 +343,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "hikaricp_connections_pending{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", pool=\"$pool\"}",
@@ -359,7 +359,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Hora da inicialização da API",
       "fieldConfig": {
@@ -407,7 +407,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "process_start_time_seconds{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\"} * 1000",
@@ -422,7 +422,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Erros de autenticação no último minuto",
       "fieldConfig": {
@@ -479,7 +479,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "increase(auth_user_error_total[1m])",
@@ -494,7 +494,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Conexões com o database em timeout",
       "fieldConfig": {
@@ -547,7 +547,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "increase(hikaricp_connections_timeout_total{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", pool=\"$pool\"}[1m])",
@@ -562,7 +562,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Warnings e erros logados nos últimos 5 minutos",
       "fieldConfig": {
@@ -675,7 +675,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(increase(logback_events_total{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", level=\"warn\"}[5m]))",
@@ -686,7 +686,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(increase(logback_events_total{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", level=\"error\"}[5m]))",
@@ -719,7 +719,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Memória heap utilizada",
       "fieldConfig": {
@@ -775,7 +775,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(jvm_memory_used_bytes{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", area=\"heap\"})* 100 / sum(jvm_memory_max_bytes{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", area=\"heap\"})",
@@ -790,7 +790,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Utilização de CPU",
       "fieldConfig": {
@@ -870,7 +870,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "system_cpu_usage{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\"}",
@@ -881,7 +881,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "process_cpu_usage{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\"}",
@@ -897,7 +897,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Memória non-heap utilizada ",
       "fieldConfig": {
@@ -953,7 +953,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(jvm_memory_used_bytes{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", area=\"nonheap\"})* 100 / sum(jvm_memory_max_bytes{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", area=\"nonheap\"})",
@@ -968,7 +968,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Média de uso de CPU",
       "fieldConfig": {
@@ -1048,7 +1048,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "system_load_average_1m{instance=\"$instance\", application=\"$application\", job=\"app-forum-api\"}",
@@ -1059,7 +1059,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "system_cpu_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\"}",
@@ -1092,7 +1092,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Total de requisições no último minuto",
       "fieldConfig": {
@@ -1147,7 +1147,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(increase(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\"}[1m]))",
@@ -1162,7 +1162,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Número de erros 500 no último minuto",
       "fieldConfig": {
@@ -1217,7 +1217,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(increase(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"500\"}[1m]))",
@@ -1232,7 +1232,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Latência média por minuto",
       "fieldConfig": {
@@ -1309,7 +1309,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "histogram_quantile(0.99, sum(rate(http_server_requests_seconds_bucket{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri!=\"/actuator/prometheus\"}[1m])) by (le))",
@@ -1320,7 +1320,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "histogram_quantile(0.90, sum(rate(http_server_requests_seconds_bucket{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri!=\"/actuator/prometheus\"}[1m])) by (le))",
@@ -1332,7 +1332,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "histogram_quantile(0.75, sum(rate(http_server_requests_seconds_bucket{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri!=\"/actuator/prometheus\"}[1m])) by (le))",
@@ -1344,7 +1344,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "histogram_quantile(0.50, sum(rate(http_server_requests_seconds_bucket{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri!=\"/actuator/prometheus\"}[1m])) by (le))",
@@ -1356,7 +1356,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "histogram_quantile(0.25, sum(rate(http_server_requests_seconds_bucket{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri!=\"/actuator/prometheus\"}[1m])) by (le))",
@@ -1372,7 +1372,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Taxa de erros nos últimos 5 minutos",
       "fieldConfig": {
@@ -1499,7 +1499,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(rate(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"500\", uri!=\"/actuator/prometheus\"}[5m])) / sum(rate(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri!=\"/actuator/prometheus\"}[5m]))",
@@ -1510,7 +1510,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(rate(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"400\", uri!=\"/actuator/prometheus\"}[5m])) / sum(rate(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri!=\"/actuator/prometheus\"}[5m]))",
@@ -1522,7 +1522,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(rate(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"404\", uri!=\"/actuator/prometheus\"}[5m])) / sum(rate(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri!=\"/actuator/prometheus\"}[5m]))",
@@ -1538,7 +1538,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Tempo de resposta da API no último minuto",
       "fieldConfig": {
@@ -1615,7 +1615,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "rate(http_server_requests_seconds_sum{instance=\"$instance\", application=\"$application\", uri!=\"/actuator/prometheus\"}[1m]) / rate(http_server_requests_seconds_count{instance=\"$instance\", application=\"$application\", uri!=\"/actuator/prometheus\"}[1m])",
@@ -1630,7 +1630,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Número de requisições por endpoint no último minuto",
       "fieldConfig": {
@@ -1710,7 +1710,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(increase(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri=\"/topicos\"}[1m]))",
@@ -1721,7 +1721,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(increase(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri=\"/topicos/{id}\"}[1m]))",
@@ -1733,7 +1733,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "sum(increase(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", uri=\"/auth\"}[1m]))",
@@ -1749,7 +1749,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Duração média de requisições no último minuto",
       "fieldConfig": {
@@ -1829,7 +1829,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "rate(http_server_requests_seconds_sum{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"200\", uri=\"/topicos\"}[1m]) / rate(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"200\", uri=\"/topicos\"}[1m])",
@@ -1840,7 +1840,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "rate(http_server_requests_seconds_sum{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"200\", uri=\"/topicos/{id}\"}[1m]) / rate(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"200\", uri=\"/topicos/{id}\"}[1m])",
@@ -1852,7 +1852,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "rate(http_server_requests_seconds_sum{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"200\", uri=\"/auth\"}[1m]) / rate(http_server_requests_seconds_count{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"200\", uri=\"/auth\"}[1m])",
@@ -1868,7 +1868,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "PybU_5x7k"
+        "uid": "fRpmiPw7z"
       },
       "description": "Duração máxima de uma requisição",
       "fieldConfig": {
@@ -1948,7 +1948,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "PybU_5x7k"
+            "uid": "fRpmiPw7z"
           },
           "exemplar": true,
           "expr": "http_server_requests_seconds_max{application=\"$application\", instance=\"$instance\", job=\"app-forum-api\", status=\"200\", uri!=\"/actuator/prometheus\"}",
